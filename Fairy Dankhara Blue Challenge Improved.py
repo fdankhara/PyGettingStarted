@@ -29,6 +29,15 @@ def checkAccess():
     if (attempt > 3):
         print("Access Denied. Retries Exceeded")
         exit(0)
+
+def askAge():
+    age = int(input("Enter your age"))
+    if age == 31:
+        print ("Is that you Mr Tibble?")
+    elif age > 31:
+        print("Wow! You ARE old!")
+    else:
+        print("I'm older than you")
     
 #checking change control
 print("LOGIN PAGE")
@@ -39,10 +48,6 @@ computer_name = "Destiny"
 player_name = input("What is your name?")
 print("Hello ", player_name, "nice to meet you")
 print("My name is ", computer_name)
-age = int(input("Enter your age"))
-if age == 31:
-    print ("Is that you Mr Tibble?")
-else:
-    print("I'm older than you")
+askAge()
 checkPet()
 
